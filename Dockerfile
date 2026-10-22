@@ -15,7 +15,7 @@ COPY src ./src
 # Build WAR
 RUN mvn clean package -DskipTests
 
-# -----------------------------
+# -------------------------
 # Stage 2: Tomcat Runtime
 # -----------------------------
 FROM tomcat:10.1-jdk17-temurin
